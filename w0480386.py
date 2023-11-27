@@ -39,3 +39,35 @@ Set2 = {"Beans", "Poutine", "Beaver-tail"}
 set3 = Set1.intersection(Set2)
 print(set3)
 
+#Create a list of numbers. Perform the following operations and print the result:
+s = [1,2,3,4,5,6,7,8,9]
+z = sum(s)
+y = max(s)
+w = min(s)
+a = sum(s) / len(s)
+
+print(z)
+print(y)
+print(w)
+print(a)
+
+
+#Generate a list of squares of numbers from 1 to 10 using list comprehension.
+squares = [x**2 for x in range (1, 11)]
+print (squares)
+
+#Create a tuple with three values. Unpack the tuple into three variables and print them.
+cars = ("Mazda","Lamborghini","Cheverolet")
+(luxury , supercar , truck) = cars
+print(luxury)
+print(supercar)
+print(truck)
+
+Student_dict={
+     "name" :"Jake",
+    "Age" : 33,
+    "City": "Connecticut"
+}
+for keys,values in Student_dict.items():
+   print (keys,values)
+
