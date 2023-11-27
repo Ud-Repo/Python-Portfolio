@@ -16,7 +16,7 @@ def add_customer():
         order = {"order_id":order_id,"product_name": product_name,"quantity": quantity,"unit_price": unit_price, "total_cost": total_cost} #create dictionary for details
         customers[customer_id]["orders"].append.order #add order dictionary to the specific customer. Use generated order id as key.
         print("order placed successfully!")
-
+# Generate Customer Report
         def generate_customer_report(customer_id):
             global customers
             #check if customer exists in dictionary
@@ -43,9 +43,14 @@ def add_customer():
                 print(f"Total Cost: {order_details[total_cost]}")
                 print("---------------")
 
+                def generate_all_reports():
+                    reports = list(zip (customers,order))
+                    print(reports)
+                    
+#Create Menu 
                 while True:
                     print("What can we do for you today?")
-                    print("\n1. Add Customer\n2. Place Order \n3. Generate Customer Report \n4. Exit" )
+                    print("\n1. Add Customer\n2. Place Order \n3. Generate Customer Report \n4.Generate all reports\n5. Exit" )
                     
                     choice = input ("Enter an option to get started:  ")
 
@@ -57,6 +62,8 @@ def add_customer():
                         customer_id = int(input("Enter Customer ID: "))    
                         generate_customer_report(customer_id)
                     elif choice == "4":
+                         generate_all_reports()
+                    elif choice == "5":
                         print("Thank you for working with us!")
                         print("Now exiting ......")
                         break

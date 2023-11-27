@@ -23,7 +23,7 @@ for language, difficulty in quiz:
         print("Correct!")
         score += 1
     else:
-        print(f"Wrong! The difficulty level of '{language}' is {difficulty}.")
+        print(f"Nope! The difficulty level of '{language}' is {difficulty}.")
     print()  # Empty line for readability
 
 # Display final score
