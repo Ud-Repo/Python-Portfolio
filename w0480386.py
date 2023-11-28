@@ -71,3 +71,57 @@ Student_dict={
 for keys,values in Student_dict.items():
    print (keys,values)
 
+#Create a nested dictionary representing information about students and their grades. Print the average grade for each student.
+student_scores = {
+"Modupe" : 90,
+"Jill" : 85,
+"Charlie" : 50,
+"Uduak" : 94,
+"Teagen" : 80,
+"Mark" : 68,
+"Bihan" : 80,
+"Marcus" :98,
+"Davis" :103,
+"Opadele": 98
+}
+# Print the scores
+print (student_scores)
+
+#find the average
+average = sum(student_scores.values()) / len(student_scores)
+print(f"Average = {average}")
+
+#Write a function that takes two arguments and returns their sum.
+def add(a,b) :
+    return a+b
+print ("The sum of the numbers 4 and 39 is :",add(4,39))
+
+# Python code to
+# demonstrate readlines()
+
+L = ["Remove\n", "Sue\n", "Add \n"]
+
+# writing to file
+file1 = open('myfile.txt', 'w')
+file1.writelines(L)
+file1.close()
+
+# Using readlines()
+file1 = open('myfile.txt', 'r')
+Lines = file1.readlines()
+
+count = 0
+# Strips the newline character
+for line in Lines:
+	count += 1
+	print("Line{}: {}".format(count, line.strip()))
+     
+     #Write a list of strings to a new text file named 'output.txt'.
+list = [1,2,3,4]
+
+filename = ('output.txt')
+outfile = open(filename, 'w')
+outfile.writelines(list)
+outfile.close()
+
+      
