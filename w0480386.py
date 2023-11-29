@@ -40,7 +40,7 @@ def factorial(n):
           result *= n
           n -= 1
           return result
-     print (factorial (4))
+     print(factorial (4))
 
 #Create two sets, set1 and set2, and find and print their intersection.
 Set1 = {"Beaver-tail", "Carrots", "Stew"}
