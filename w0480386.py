@@ -17,8 +17,8 @@ print(text.format(height))
 
 
 #Using a for loop, print the numbers from 1 to 10.
-for s in range(1,11) :
-    print(s)
+for s in range(1,11,1) :
+    print(s-1)
 
 #Write a function to calculate the factorial of a number using a while loop.
 # accept input number from user
@@ -32,6 +32,15 @@ while n >= 1:
 
 # print output
 print("Factorial is", f)
+
+#or
+def factorial(n):
+     result = 1
+     while n >= 0:
+          result *= n
+          n -= 1
+          return result
+     print (factorial (4))
 
 #Create two sets, set1 and set2, and find and print their intersection.
 Set1 = {"Beaver-tail", "Carrots", "Stew"}
@@ -53,7 +62,7 @@ print(a)
 
 
 #Generate a list of squares of numbers from 1 to 10 using list comprehension.
-squares = [x**2 for x in range (1, 11)]
+squares = [x**2 for x in range (1, 11,2)]
 print (squares)
 
 #Create a tuple with three values. Unpack the tuple into three variables and print them.
@@ -80,7 +89,7 @@ student_scores = {
 "Teagen" : 80,
 "Mark" : 68,
 "Bihan" : 80,
-"Marcus" :98,
+"Marcus" :98, 
 "Davis" :103,
 "Opadele": 98
 }
@@ -121,7 +130,7 @@ list = [1,2,3,4]
 
 filename = ('output.txt')
 outfile = open(filename, 'w')
-outfile.writelines(list)
+outfile.writelines('list')
 outfile.close()
 
       
