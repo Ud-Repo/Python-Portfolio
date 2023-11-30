@@ -33,14 +33,6 @@ while n >= 1:
 # print output
 print("Factorial is", f)
 
-#or
-def factorial(n):
-     result = 1
-     while n > 0:
-          result *= n
-          n -= 1
-          return result
-     print(factorial (4))
 
 #Create two sets, set1 and set2, and find and print their intersection.
 Set1 = {"Beaver-tail", "Carrots", "Stew"}
@@ -82,23 +74,23 @@ for keys,values in Student_dict.items():
 
 #Create a nested dictionary representing information about students and their grades. Print the average grade for each student.
 student_scores = {
-"Modupe" : 90,
-"Jill" : 85,
-"Charlie" : 50,
-"Uduak" : 94,
-"Teagen" : 80,
-"Mark" : 68,
-"Bihan" : 80,
-"Marcus" :98, 
-"Davis" :103,
-"Opadele": 98
+"Modupe" :{ 90,}
+"Jill" : {85,}
+"Charlie" : {50,}
+"Uduak" : {94,}
+"Teagen" : {80,}
+"Mark" : {68,}
+"Bihan" : {80,}
+"Marcus" :{98,} 
+"Davis" :{'math':103,'Agric':79}
+"Opadele": {'math' : 98, 'Agric' :76}
 }
 # Print the scores
 print (student_scores)
 
 #find the average
 average = sum(student_scores.values()) / len(student_scores)
-print(f"Average = {average}")
+print(f"{student_scores}'s average score : {average}")
 
 #Write a function that takes two arguments and returns their sum.
 def add(a,b) :
@@ -133,4 +125,35 @@ outfile = open(filename, 'w')
 outfile.writelines('list')
 outfile.close()
 
-      
+set1 = {1,2,3,4,5}
+set2 = {2,3,5,6,7,8}
+difference_set = set1 & set2
+print(difference_set)
+
+aser = {1,2,3,4,5,6,7,8}
+total = 0
+for t in aser :
+     total += t
+     print(total)
+
+
+
+#
+
+     my_list = [2, 8, 4, 1, 7]
+
+largest_number = None
+
+for number in my_list:
+    if largest_number is None or largest_number < number:
+        largest_number = number
+
+# ✅ get the largest number
+print(largest_number)  # 👉️ 8
+
+# ✅ get the index of the largest number
+print(my_list.index(largest_number))  # 👉️ 1
+
+my_numbers = [1,2,3,4,5,6,7,8,9,]
+max = sorted(my_numbers)[-1]
+print(max)

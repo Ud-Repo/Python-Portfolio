@@ -63,7 +63,7 @@ while True:
         add_customer()
     elif choice == "2":
         #  user inputs order details here
-        place_order(1, "Product A", 2, 15.99)  # Example usage
+        place_order(1, "Product A", 2, 15.99)  # testing
     elif choice == "3":
         customer_id = int(input("Enter customer ID: "))
         generate_customer_report(customer_id)
