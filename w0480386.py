@@ -73,7 +73,7 @@ for keys,values in Student_dict.items():
    print (keys,values)
 
 #Create a nested dictionary representing information about students and their grades. Print the average grade for each student.
-student_scores = {
+#student_scores = {
 "Modupe" :{ 90,}
 "Jill" : {85,}
 "Charlie" : {50,}
@@ -84,13 +84,13 @@ student_scores = {
 "Marcus" :{98,} 
 "Davis" :{'math':103,'Agric':79}
 "Opadele": {'math' : 98, 'Agric' :76}
-}
+#}
 # Print the scores
-print (student_scores)
+#(print (student_scores)
 
 #find the average
-average = sum(student_scores.values()) / len(student_scores)
-print(f"{student_scores}'s average score : {average}")
+#average = sum(student_scores.values()) / len(student_scores)
+#print(f"{student_scores}'s average score : {average}"))
 
 #Write a function that takes two arguments and returns their sum.
 def add(a,b) :
