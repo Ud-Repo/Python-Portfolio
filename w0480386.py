@@ -73,24 +73,25 @@ for keys,values in Student_dict.items():
    print (keys,values)
 
 #Create a nested dictionary representing information about students and their grades. Print the average grade for each student.
-#student_scores = {
-"Modupe" :{'math': 90,'Agric':60}
-"Jill" : {'math': 85,'Agric':80}
-"Charlie" : {'math':50, 'Agric':89}
-"Uduak" : {94,}
-"Teagen" : {80,}
-"Mark" : {68,}
-"Bihan" : {80,}
-"Marcus" :{98,} 
-"Davis" :{'math':103,'Agric':79}
+student_scores = {
+"Modupe" :{'math': 90,'Agric':60},
+"Jill" :{'math': 85,'Agric':80},
+"Charlie" : {'math':50, 'Agric':89},
+"Uduak" : {'math':94,'Agric':60},
+"Teagen" : {'math': 80, 'Agric': 79},
+"Mark" : {'math':68, 'Agric':89},
+"Bihan" : {'math': 80, 'Agric':60},
+"Marcus" :{'math': 98,'Agric':88} ,
+"Davis" :{'math':103,'Agric':79},
 "Opadele": {'math' : 98, 'Agric' :76}
-#}
+
+}
 # Print the scores
-#(print (student_scores)
+print (student_scores)
 
 #find the average
-#average = sum(student_scores.values()) / len(student_scores)
-#print(f"{student_scores}'s average score : {average}"))
+average = sum(student_scores.values()) / len(student_scores)
+print(f"{student_scores}'s average score : {average}")
 
 #Write a function that takes two arguments and returns their sum.
 def add(a,b) :
@@ -148,11 +149,11 @@ for number in my_list:
     if largest_number is None or largest_number < number:
         largest_number = number
 
-# ✅ get the largest number
-print(largest_number)  # 👉️ 8
+# get the largest number
+print(largest_number)  #  8
 
-# ✅ get the index of the largest number
-print(my_list.index(largest_number))  # 👉️ 1
+#  get the index of the largest number
+print(my_list.index(largest_number))  # 1
 
 my_numbers = [1,2,3,4,5,6,7,8,9,]
 max = sorted(my_numbers)[-1]
