@@ -74,9 +74,9 @@ for keys,values in Student_dict.items():
 
 #Create a nested dictionary representing information about students and their grades. Print the average grade for each student.
 #student_scores = {
-"Modupe" :{ 90,}
-"Jill" : {85,}
-"Charlie" : {50,}
+"Modupe" :{'math': 90,'Agric':60}
+"Jill" : {'math': 85,'Agric':80}
+"Charlie" : {'math':50, 'Agric':89}
 "Uduak" : {94,}
 "Teagen" : {80,}
 "Mark" : {68,}
