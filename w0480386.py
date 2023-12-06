@@ -84,13 +84,12 @@ student_scores = {
 "Marcus" :{'math': 98,'Agric':88} ,
 "Davis" :{'math':103,'Agric':79},
 "Opadele": {'math' : 98, 'Agric' :76}
-
 }
 # Print the scores
 print (student_scores)
 
 #find the average
-average = sum(student_scores.values()) / len(student_scores)
+average = sum(student_scores.values() / len(student_scores))
 print(f"{student_scores}'s average score : {average}")
 
 #Write a function that takes two arguments and returns their sum.
