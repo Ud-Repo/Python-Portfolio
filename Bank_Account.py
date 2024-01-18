@@ -2,10 +2,11 @@
 def create_account(owner, balance=0):
     return {"owner":owner, "balance" : balance}
 
+# Deposit into the account
 def deposit(account, amount):
     account["balance"] += amount
     print (f"Deposited ${amount}. New balance : ${account['balance']}")
-    
+    #Withdraw from the account
     def withdraw(account, amount):
         if amount <= account["balance"]:
             account["balance"] -= amount
